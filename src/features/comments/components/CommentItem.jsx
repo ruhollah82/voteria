@@ -62,7 +62,7 @@ export function CommentItem({ comment, postId, depth = 0 }) {
         >
           <AvatarFallback className="text-[10px]">{initials}</AvatarFallback>
         </Avatar>
-        {!comment.collapsed && (comment.children?.length > 0 || true) && (
+        {!comment.collapsed && comment.children?.length > 0 && (
           <button
             onClick={() => toggleCollapse(postId, comment.id)}
             aria-label="Collapse thread"

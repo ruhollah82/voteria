@@ -35,7 +35,7 @@ export const useSpacesStore = create((set, get) => ({
   page: 1,
   hasMore: true,
   subscribeLoading: false,
-  currentSpace: null, // ✅ Add this
+  currentSpace: null,
 
   fetchSpaces: async (page = 1, sort_by = "") => {
     set({ loading: true, error: null });
